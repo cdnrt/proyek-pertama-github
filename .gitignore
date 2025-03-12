@@ -1,0 +1,19 @@
+# File atau direktori hasil build yang dihasilkan oleh tools atau compiler sebaiknya diabaikan.
+/dist/
+/build/
+
+# File konfigurasi lokal yang tidak perlu dibagikan dengan tim, seperti file environment (`.env`) atau konfigurasi database.
+.env
+config.local.json
+
+# Direktori yang berisi dependensi eksternal, seperti node_modules/ pada proyek Node.js, tidak perlu dilacak oleh Git karena dapat di-install ulang dengan package manager.
+/node_modules/
+/vendor/
+
+# File log dan cache yang terus berubah tidak perlu disimpan di repositori.
+*.log
+.cache/
+
+# File atau folder yang dihasilkan oleh editor atau IDE, seperti VSCode atau IntelliJ, sering kali berisi konfigurasi text editor yang hanya relevan bagi pengguna lokal.
+.vscode/
+.idea/
